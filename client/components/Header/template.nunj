@@ -1,0 +1,21 @@
+{% import "templates/macros/avatar.nunj" as avatar %}
+
+<div class='header-column header-column--left'>
+</div>
+
+<div class='header-column header-column--center'>
+    <a href="/home"><h1>marionette-webpack-node</h1></a>
+</div>
+
+<div class='header-column header-column--right'>
+    {% if appuser.isAuthenticated %}
+        {{ avatar.avatar(user=appuser, href='profile') }}
+    {% endif %}
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+@import "client/scss/config/colors";
+
+a, a:link, a:active, a:visited  {
+    color: $link-color;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+}

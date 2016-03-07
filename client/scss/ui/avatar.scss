@@ -1,0 +1,33 @@
+@import "client/scss/config/avatar";
+@import "client/scss/config/type";
+
+.avatar, a.avatar{
+    border-radius: 50%;
+    font-size: 50px;
+    position: relative;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    display: inline-block;
+    background-color:$avatar-bg-color;
+    color: $avatar-text-color;
+    font-family: $font-bold;
+
+    >*{
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+
+       &.initials{
+            font-size: 0.4em;
+            margin-top: 0.065em;
+            width: 100%;
+            text-align: center;
+            display: block;
+        }
+    }
+}
+
+

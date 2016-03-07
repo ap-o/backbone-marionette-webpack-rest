@@ -1,0 +1,61 @@
+@import "client/scss/config/buttons";
+
+.btn, a.btn{
+    position: relative;
+    display: inline-block;
+    padding: 1em 2.5em;
+    line-height: 0.9em;
+    text-align: center;
+    font-size: $btn-font-size;
+    font-family: $btn-font-family;
+    outline:none;
+    border:0;
+    text-transform: uppercase;
+    color: $btn-default-txt-color;
+    background-color: $btn-default-bg-color;
+    cursor: pointer;
+
+    &:hover, .hover{
+        color: $btn-default-txt-color--hover;
+        background-color: $btn-default-bg-color--hover;
+    }
+    &:active, .active{
+        color: $btn-default-txt-color--active;
+        background-color: $btn-default-bg-color--active;
+    }
+
+    &[disabled], &.disabled{
+        color: $btn-disabled-txt-color;
+        background-color: $btn-disabled-bg-color;
+        &:hover, .hover, &:active, .active{
+            color: $btn-disabled-txt-color;
+            background-color: $btn-disabled-bg-color;
+        }
+        cursor: default;
+    }
+
+    &.btn-large{
+        font-size: $btn-font-size-large;
+        padding: 0.7em 2em;
+    }
+
+    &.btn-small{
+        font-size: $btn-font-size-small;
+        padding: 0.7em 2em;
+    }
+
+    &.btn-blue{
+        color: $btn-blue-txt-color;
+        background-color: $btn-blue-bg-color;
+
+        &:hover, .hover{
+            color: $btn-blue-txt-color--hover;
+            background-color: $btn-blue-bg-color--hover;
+        }
+        &:active, .active{
+            color: $btn-blue-txt-color--active;
+            background-color: $btn-blue-bg-color--active;
+        }
+    }
+
+}

@@ -1,0 +1,10 @@
+<header data-region="root-header" class="hide"></header>
+
+<main data-region="root-main" class="hide"></main>
+
+<aside data-region="root-right-aside" class="hide"></aside>
+
+<footer data-region="root-footer" class="hide"></footer>
+
+
+

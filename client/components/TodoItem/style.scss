@@ -1,0 +1,73 @@
+@import "client/scss/config/global";
+@import "client/scss/config/type";
+@import "client/scss/config/breakpoints";
+
+[data-view="todo-item-view"] {
+    position: relative;
+    font-size: $h3-fontsize;
+    cursor: pointer;
+    opacity: 0;
+
+    &:before {
+        position: absolute;
+        display: block;
+        font-family: $font-bold;
+        font-size: $h2-fontsize;
+        line-height: 1.1em;
+        transition: all 0.5s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    }
+
+    .title{
+        display: block;
+        padding-left: 40px;
+        transition: all 0.5s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    }
+
+    .strikethrough{
+        width: 4px;
+        display: block;
+        top: 50%;
+        bottom:50%;
+        position: absolute;
+        left: 20%;
+        background-color: $text-color;
+        transition: all 0.5s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+        transform: rotate(42deg);
+    }
+
+    &.completed {
+        .title{
+            opacity: 0.5;
+        }
+        &:before{
+            opacity: 0.5;
+        }
+        .strikethrough{
+            top: -30px;
+            bottom: -30px;
+        }
+    }
+
+    .bin{
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 12px;
+        padding:15px;
+        >*{
+            display: block;
+            background-image: url('../../images/bin.svg');
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+        }
+    }
+
+     @media #{$medium-and-up}{
+        .title{
+            padding-left: 10%;
+        }
+    }
+}

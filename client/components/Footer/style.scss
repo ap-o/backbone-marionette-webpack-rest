@@ -1,0 +1,38 @@
+@import "client/scss/config/footer";
+
+[data-view="app-footer-view"] {
+    background-color: $footer-bg-color;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 4px;
+    border-top: $footer-border-top;
+    height: $footer-height;
+    display: flex;
+    flex-direction: row;
+    .footer-column{
+        display: flex;
+        padding:5px 30px;
+
+    }
+
+    .footer-column--left{
+        flex:1;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .footer-column--center{
+        flex:2;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-column--right{
+        flex:1;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+}
+
+
+
+

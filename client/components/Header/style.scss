@@ -1,0 +1,53 @@
+@import "client/scss/config/header";
+
+[data-view="app-header-view"] {
+    width: 100%;
+    background-color: $header-bg-color;
+    border-bottom: $header-border-bottom;
+    height: $header-height;
+    display: flex;
+    flex-direction: row;
+
+    .header-column{
+        display: flex;
+        padding:5px 30px;
+
+    }
+
+    .header-column--left{
+        flex:1;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .header-column--center{
+        flex:2;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-column--right{
+        flex:1;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    h1 {
+        margin:0;
+        position: relative;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        width: $header-logo-width;
+        height: $header-logo-height;
+        background-image: url($header-logo);
+    }
+    .avatar{
+        font-size: 36px;
+    }
+}
+
+
+
+

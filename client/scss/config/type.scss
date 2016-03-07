@@ -1,0 +1,33 @@
+
+$fonts: (
+    ("StaticRegular", "fonts/static/static.woff"),
+    ("StaticItalic", "fonts/static/static_italic.woff"),
+    ("StaticBold", "fonts/static/static_bold.woff"),
+    ("staticBoldItalic", "fonts/static/static_bold_italic.woff")
+);
+
+$font-default:                  "StaticRegular";
+$font-italic:                   "StaticItalic";
+$font-bold:                     "StaticBold";
+$font-bold-italic:              "StaticBoldItalic";
+$font-icon:                     "Material Icons";
+
+
+$font-size:                     18px;
+$h1-fontsize:                   4rem !default;
+$h3-fontfamily:                 $font-bold !default;
+
+$h2-fontsize:                   3rem !default;
+$h2-fontfamily:                 $font-bold !default;
+
+$h3-fontsize:                   2rem !default;
+$h1-fontfamily:                 $font-bold !default;
+
+$h4-fontsize:                   1.5rem !default;
+$h4-fontfamily:                 $font-default !default;
+
+$h5-fontsize:                   1rem !default;
+$h5-fontfamily:                 $font-default !default;
+
+$h6-fontsize:                   0.875rem !default;
+$h6-fontfamily:                 $font-default !default;

@@ -1,0 +1,35 @@
+@import "client/scss/config/breakpoints";
+
+[data-view="todo-list-view"] {
+
+    dl {
+        padding: 15px 30px;
+        counter-reset: todos-counter;
+        dt{
+            &:before {
+                content: counter(todos-counter);
+                counter-increment: todos-counter;
+
+            }
+        }
+        >*{
+            width: 100%;
+            padding: 15px 15px;
+        }
+
+        @media #{$medium-and-up}{
+           padding: 3% 3%;
+           >*{
+                padding: 3% 3%;
+            }
+        }
+
+        @media #{$large-and-up}{
+            padding: 1.75% 1.75%;
+            >*{
+                padding: 2.5% 2.5%;
+            }
+        }
+    }
+
+}

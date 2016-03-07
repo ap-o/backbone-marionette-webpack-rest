@@ -1,0 +1,20 @@
+@import "client/scss/config/global";
+@import "client/scss/config/type";
+@import "client/scss/config/colors";
+
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+html{
+    line-height: 1.5;
+    font-family: $font-default;
+    font-size: $font-size;
+    background-color: $bg-color;
+    color: $text-color;
+}

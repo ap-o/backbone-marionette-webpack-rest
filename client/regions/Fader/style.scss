@@ -1,0 +1,40 @@
+[data-region-type="fader-region"] {
+  	position: relative;
+
+    > * {
+        opacity: 0;
+    }
+}
+
+.fader-region-in {
+    animation: fadein 1300ms;
+    animation-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    animation-fill-mode: both;
+}
+
+.fader-region-out {
+    animation: fadeout 0;
+    animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+    animation-fill-mode: both;
+}
+
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        position: absolute;
+        opacity: 1;
+    }
+    100% {
+        position: absolute;
+        opacity: 0;
+    }
+}

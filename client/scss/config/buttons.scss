@@ -1,0 +1,43 @@
+@import "scss/config/colors";
+@import "scss/config/type";
+
+// DISABLED
+$btn-font-size:                                         12px;
+$btn-font-size-large:                                   16px;
+$btn-font-size-small:                                   9px;
+$btn-font-family:                                       $font-bold;
+
+$btn-disabled-txt-color:                                $nero;
+$btn-disabled-bg-color:                                 $smoke;
+
+// DEFAULT
+$btn-default-txt-color:                                 $whitesmoke;
+$btn-default-bg-color:                                  $coral;
+// hover
+$btn-default-txt-color--hover:                          $whitesmoke;
+$btn-default-bg-color--hover:                           $coral;
+// hover
+$btn-default-txt-color--active:                         $whitesmoke;
+$btn-default-bg-color--active:                          $coral;
+
+
+// BLUE
+$btn-blue-txt-color:                                    $whitesmoke;
+$btn-blue-bg-color:                                     $royalblue;
+// hover
+$btn-blue-txt-color--hover:                             $whitesmoke;
+$btn-blue-bg-color--hover:                              $royalblue;
+// hover
+$btn-blue-txt-color--active:                            $whitesmoke;
+$btn-blue-bg-color--active:                             $royalblue;
+
+
+// TOGGLE
+$btn-selected-txt-color:                                 $whitesmoke;
+$btn-selected-bg-color:                                  $teal;
+// hover
+$btn-selected-txt-color--hover:                          $whitesmoke;
+$btn-selected-bg-color--hover:                           $teal;
+// hover
+$btn-selected-txt-color--active:                         $whitesmoke;
+$btn-selected-bg-color--active:                          $coral;

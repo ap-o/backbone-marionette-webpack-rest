@@ -1,0 +1,20 @@
+@import "./colors";
+@import "./global";
+@import "./type";
+
+$input-font-size:                                       1.2rem;
+$input-bg-color:                                        $white;
+$input-txt-color:                                       $text-color;
+$input-border-top:                                      none;
+$input-border-right:                                    none;
+$input-border-bottom:                                   none;
+$input-border-left:                                     none;
+
+$input-disabled:                                        rgba($text-color, 0.4);
+$input-error:                                           $errorcolor;
+
+// $input-label-family:                                    $font-bold-italc;
+$input-label-color:                                     $text-color;
+
+
+

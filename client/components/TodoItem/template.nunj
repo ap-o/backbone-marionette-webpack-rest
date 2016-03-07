@@ -1,0 +1,4 @@
+<span class="title">{{title}}</span>
+<span class="strikethrough"></span>
+
+<button class="bin"><span class"bin-icon"></span></button>

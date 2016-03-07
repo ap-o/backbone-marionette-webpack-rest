@@ -1,0 +1,11 @@
+{% import "templates/macros/avatar.nunj" as avatar %}
+
+
+<button class="btn btn-small btn-close-region hide-on-med-and-up">Close</button>
+<button class="btn btn-small btn-logout">Logout</button>
+
+{{ avatar.avatar(user=appuser) }}
+
+<h4>{{ appuser.firstname }} {{ appuser.lastname }}</h6>
+<h6>{{appuser.email}}</h6>
+

@@ -1,0 +1,23 @@
+{% macro avatar(user, link=false, href=false) -%}
+    {% if  link -%}
+        <a href="/user/{{user.id}}" class="avatar">
+    {%- elif href -%}
+        <a href="{{href}}" class="avatar">
+    {%- else -%}
+        <span class="avatar">
+    {%- endif -%}
+
+        {%- if user.avatar -%}
+            <div class="img" style="background-image: url({{user.avatar}})"></div>
+        {%- else -%}
+            <div class="initials">{{user.initials}}</div>
+        {%- endif -%}
+
+    {%- if  link -%}
+        </a>
+    {%- elif href -%}
+        </a>
+    {%- else -%}
+        </span>
+    {%- endif %}
+{% endmacro %}

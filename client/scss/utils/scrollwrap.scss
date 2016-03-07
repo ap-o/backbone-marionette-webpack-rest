@@ -1,0 +1,5 @@
+@mixin scrollwrap($x:hidden, $y:auto){
+    overflow-x: $x;
+    overflow-y: $y;
+    -webkit-overflow-scrolling: touch;
+}

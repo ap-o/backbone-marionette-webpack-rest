@@ -1,0 +1,29 @@
+@import 'client/scss/config/colors';
+
+[data-view="profile-view"] {
+    position: relative;
+    text-align: center;
+    background-color: $blackboard;
+    color: $whitesmoke;
+
+    .avatar{
+        font-size: 120px;
+    }
+
+    .btn-close-region{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .btn-logout{
+        position: absolute;
+        right: 50px;
+        top: 20px;
+    }
+
+}
+
+
+
+

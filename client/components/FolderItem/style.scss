@@ -1,0 +1,23 @@
+@import "client/scss/config/global";
+@import "client/scss/config/colors";
+@import "client/scss/config/type";
+@import "client/scss/config/breakpoints";
+
+[data-view="folder-item-view"] {
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+
+    .inner{
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+        background-color: $blackboard;
+
+        .title{
+            position: absolute;
+            bottom: 25px;
+            left: 35px;
+        }
+    }
+}

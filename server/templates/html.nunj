@@ -1,0 +1,49 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ui-mobile-rendering" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ui-mobile-rendering" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ui-mobile-rendering" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js ui-mobile-rendering" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <meta name="fragment" content="!">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title></title>
+    <meta name="apple-mobile-web-app-title" content="Pilot Ideas">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{staticUrl}}img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{staticUrl}}img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{staticUrl}}img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{staticUrl}}img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{staticUrl}}img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{staticUrl}}img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{staticUrl}}img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{staticUrl}}img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{staticUrl}}img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{staticUrl}}img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{staticUrl}}img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{staticUrl}}img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{staticUrl}}img/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{staticUrl}}img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css">
+
+    {% block scripts %}
+    <script src="/assets/vendor.js"></script>
+    <script src="/assets/app.js"></script>
+    {% endblock %}
+
+</head>
+
+<body id="app-body">
+</body>
+
+</html>

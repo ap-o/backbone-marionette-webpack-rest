@@ -1,0 +1,109 @@
+@import 'client/scss/utils/scrollwrap';
+@import 'client/scss/config/colors';
+@import "client/scss/config/breakpoints";
+
+[data-region-type="overlay-right-region"] {
+  	position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left:0;
+
+
+    .region-content{
+        @include scrollwrap();
+        height: 100vh;
+        position: fixed;
+        right:-30px;
+        z-index: 1;
+
+        >*{
+            min-height: 100vh;
+            padding-right: 30px;
+        }
+
+        @media #{$medium-and-up}{
+            width:75vw;
+            max-width: 450px;
+        }
+        @media #{$small-and-down}{
+            left:0;
+
+        }
+    }
+
+    > .blocker {
+        opacity: 0;
+        position: fixed;
+        top:0;
+        bottom:0;
+        left: 0;
+        right:0;
+        z-index: 0;
+        background-color: rgba(255,255,255,0.9);
+        cursor: pointer;
+    }
+
+}
+
+
+.overlay-right-region-in {
+    animation: overlayrightin 600ms;
+    animation-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    animation-fill-mode: both;
+}
+
+.overlay-right-region-out {
+    animation: overlayrightout 600ms;
+    animation-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    animation-fill-mode: both;
+}
+
+
+@keyframes overlayrightin {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes overlayrightout {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.overlay-blocker-in {
+    animation: fadein 600ms;
+    animation-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    animation-fill-mode: both;
+}
+
+.overlay-blocker-out {
+    animation: fadeout 600ms;
+    animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+    animation-fill-mode: both;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

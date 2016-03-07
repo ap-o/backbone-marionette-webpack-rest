@@ -1,0 +1,69 @@
+@import "client/scss/config/breakpoints";
+@import "client/scss/config/header";
+@import "client/scss/config/layout";
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-region="root-header"]{
+    // flex:1 100%;
+    top:0;
+    position: fixed;
+    width: 100%;
+    height: $header-height;
+    display: flex;
+    z-index: 400;
+}
+
+[data-region="root-main"] {
+    width: 100%;
+    padding-top: $header-height;
+    flex: 1 0 auto;
+    display: flex;
+    >*{
+        flex: 1 0 100%;
+    }
+}
+
+[data-region="root-right-aside"] {
+    z-index: 500;
+    height: 100vh;
+    top:0;
+    position: fixed;
+}
+
+[data-region="root-footer"] {
+    flex: 0 0 auto;
+}
+
+
+
+// #app-loading-pane{
+//     position: absolute;
+//     display: none;
+//     top: 0;
+//     left:0;
+//     width: 100vw;
+//     height: 100vh;
+//     z-index: 9999;
+//     background-color:rgba(#ffffff,0.15);
+//     background-image: url('../..//images/spinner.gif');
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     &.on{
+//         display: block;
+//     }
+// }
+
+
+
+
+
+

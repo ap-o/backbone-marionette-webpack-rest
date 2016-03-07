@@ -1,0 +1,43 @@
+@import "client/scss/config/inputs";
+
+
+// label{
+//     @include font-bold;
+//     &.disabled,
+//     &[disabled]{
+//         color:$disabled-color;
+//     }
+// }
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="url"], input[type="tel"]{
+    display: block;
+    width: 100%;
+    background-color: $input-bg-color;
+    color: $input-txt-color;
+    outline: none;
+    border: 0;
+    border-top: $input-border-top;
+    border-right: $input-border-right;
+    border-bottom: $input-border-bottom;
+    border-left: $input-border-left;
+    padding: 1em 1em 0.7em 1em;
+    -webkit-appearance: none;
+    margin:0;
+    // @include placeholder($body-txt-color);
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    background-color: $input-bg-color;
+    color: $input-txt-color;
+    outline: none;
+    border-top: $input-border-top;
+    border-right: $input-border-right;
+    border-bottom: $input-border-bottom;
+    border-left: $input-border-left;
+    padding: 1em 1em 0.7em 1em;
+    -webkit-appearance: none;
+    resize: none;
+    margin:0;
+}

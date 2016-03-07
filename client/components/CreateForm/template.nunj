@@ -1,0 +1,4 @@
+<form>
+    <input type="text" placeholder="{{ placeholder}}" maxlength="250"/>
+    <input type="submit" class="hide"/>
+</form>
