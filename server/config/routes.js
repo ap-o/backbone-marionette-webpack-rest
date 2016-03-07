@@ -3,6 +3,10 @@ var user = require('../controllers/user');
 var todo = require('../controllers/todo');
 var folder = require('../controllers/folder');
 
+// var Folder = require('../models/Folder');
+// var Todo = require('../models/Todo');
+
+
 
 module.exports = function(app, passport) {
     app.get('/api/user/logout', user.logout);
@@ -12,7 +16,6 @@ module.exports = function(app, passport) {
     app.get('/auth/facebook', auth.facebook);
     app.get('/auth/facebook/callback', auth.facebookCallback);
 
-    // TODOS
     app.get('/api/todo/:id', auth.ensureAuthenticated, todo.get);
     app.put('/api/todo/:id', auth.ensureAuthenticated, todo.update);
     app.post('/api/todo', auth.ensureAuthenticated, todo.create);
@@ -20,7 +23,6 @@ module.exports = function(app, passport) {
     app.post('/api/todo/list', auth.ensureAuthenticated, todo.list);
     app.delete('/api/todo/:id', auth.ensureAuthenticated, todo.delete);
 
-    // FOLDERS
     app.get('/api/folder/:id', auth.ensureAuthenticated, folder.get);
     app.put('/api/folder/:id', auth.ensureAuthenticated, folder.update);
     app.post('/api/folder', auth.ensureAuthenticated, folder.create);

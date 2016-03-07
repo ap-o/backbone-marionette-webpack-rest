@@ -56,7 +56,7 @@
     "es6-promise": "^3.0.2",
     "extract-text-webpack-plugin" : "^0.8.2",
     "moment": "^2.11.2",
-    "velocity-animate" : "^1.2.3",
+    "velocity-animate" : "^1.2.3"
   },
 
   "dependencies": {

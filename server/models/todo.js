@@ -4,6 +4,8 @@ var Schema = require('mongoose').Schema;
 var async = require('async');
 var validate = require('mongoose-validator');
 
+
+
 var titleValidator = [
   validate({
     validator: 'isLength',
@@ -22,5 +24,14 @@ var schema = new Schema({
     deleted: { type: Boolean, default:false }
 });
 
+schema.post('save', function(model, next) {
+    Folder.refreshTally(this.folder, next);
+});
+
+
 var Todo = mongoose.model('Todo', schema);
 module.exports = Todo;
+
+var Folder = require('../models/folder');
+
+

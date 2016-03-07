@@ -14,6 +14,14 @@
         padding-top: 100%;
         background-color: $blackboard;
 
+        .tally{
+            position: absolute;
+            top: 25px;
+            left: 35px;
+            .tallytotal{
+                opacity: 0.5;
+            }
+        }
         .title{
             position: absolute;
             bottom: 25px;

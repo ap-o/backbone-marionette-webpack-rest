@@ -1,3 +1,4 @@
 <div class="inner">
+    <span class='tally'><span class='tallypending'>{{tallypending}}</span> <span class='tallytotal'>{{tally}}</span></span>
     <h4 class="title">{{title}}</h4>
 </div>

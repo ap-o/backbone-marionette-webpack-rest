@@ -96,7 +96,6 @@ exports.update = function(req, res){
  */
 exports.list = function(req, res){
     async.waterfall([
-
         function(done){
             var query = {
                 owner: req.user._id,
@@ -106,7 +105,7 @@ exports.list = function(req, res){
         },
 
         function(query, done){
-            Folder.find(query, {title:1}).sort({created:-1}).exec(done);
+            Folder.find(query, {title:1, tally:1, tallypending:1}).sort({created:-1}).exec(done);
         }
 
     ], function(err, results){
