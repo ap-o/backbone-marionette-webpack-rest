@@ -3,33 +3,11 @@ var webpack = require('webpack');
 var assetsPath = path.join(__dirname, '..', 'public', 'assets');
 var hotMiddlewareScript = 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true';
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 module.exports = {
-    // eval - Each module is executed with eval and //@ sourceURL.
     devtool: 'eval',
-    // The configuration for the client
     name: 'browser',
-    /* The entry point of the bundle
-     * Entry points for multi page app could be more complex
-     * A good example of entry points would be:
-     * entry: {
-     *   pageA: "./pageA",
-     *   pageB: "./pageB",
-     *   pageC: "./pageC",
-     *   adminPageA: "./adminPageA",
-     *   adminPageB: "./adminPageB",
-     *   adminPageC: "./adminPageC"
-     * }
-     *
-     * We can then proceed to optimize what are the common chunks
-     * plugins: [
-     *  new CommonsChunkPlugin("admin-commons.js", ["adminPageA", "adminPageB"]),
-     *  new CommonsChunkPlugin("common.js", ["pageA", "pageB", "admin-commons.js"], 2),
-     *  new CommonsChunkPlugin("c-commons.js", ["pageC", "adminPageC"]);
-     * ]
-     */
-    // context: path.join(__dirname, '..', 'client'),
-    // Multiple entry with hot loader
-    // https://github.com/glenjamin/webpack-hot-middleware/blob/master/example/webpack.config.multientry.js
+
     entry: {
       app: ['main', hotMiddlewareScript],
 
@@ -43,12 +21,10 @@ module.exports = {
         'nunjucks/browser/nunjucks-slim'
       ]
     },
+
     output: {
-      // The output directory as absolute path
       path: assetsPath,
-      // The filename of the entry chunk as relative path inside the output.path directory
       filename: '[name].js',
-      // The output path from the view of the Javascript
       publicPath: '/assets/'
     },
 
@@ -109,13 +85,10 @@ module.exports = {
 
       alias: {
 
-        // Alias marionette to backbone.marionette to reduce the amount of typing in import statements
         marionette: 'backbone.marionette',
 
-        // Alias wreqr to backbone.wreqr to reduce the amount of typing in import statements
         wreqr: 'backbone.wreqr',
 
-        // Alias radio to backbone.radio to reduce the amount of typing in import statements
         radio: 'backbone.radio',
 
         velocity: 'velocity-animate'
@@ -142,7 +115,6 @@ module.exports = {
             "root.jQuery": "jquery"
        }),
 
-        // Create an explicit vendor commons chunk
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',
             minChunks: Infinity
