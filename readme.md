@@ -1,4 +1,4 @@
-# A simple todos app with Backbone-Marionette-Webpack-Node-Express-Mongo stack
+# Backbone-Marionette-Webpack-Node-Express-Mongo Boilerplate
 
 This is an example of building a Backbone.Marionette web app bundled with webpack. I just wanted to put together production ready boilerplate, that goes a little further than the basics. A basic todos application with facebook authentication and multiple folders of todos per user.
 
